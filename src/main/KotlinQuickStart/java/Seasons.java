@@ -1,3 +1,5 @@
+package java;
+
 public class Seasons {
 
     public static void main(String[] args) {

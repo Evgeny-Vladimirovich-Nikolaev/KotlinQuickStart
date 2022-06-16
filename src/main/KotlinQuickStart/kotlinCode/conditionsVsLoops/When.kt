@@ -8,6 +8,8 @@
  * 4. break в конструкции when не используется.
  */
 
+package kotlinCode.conditionsVsLoops
+
 fun main () {
     printSeason("January")
     printSeason("May")

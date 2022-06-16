@@ -1,5 +1,3 @@
-import kotlin.random.Random
-
 /**
  * 1. Родительский класс any (any?)
  * 2. Конструкция if может служить выражением с присваиванием, если
@@ -11,9 +9,14 @@ import kotlin.random.Random
  * в том числе со ссылками на методы
  */
 
+package kotlinCode.conditionsVsLoops
+
+import kotlin.random.Random
+
+
 fun main() {
     val food : String
-    val money : Int = Random.nextInt(700);
+    val money : Int = Random.nextInt(700)
 
     food = if(money >= 500) {
         "пиццу"

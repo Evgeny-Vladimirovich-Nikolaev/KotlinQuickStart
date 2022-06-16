@@ -1,5 +1,3 @@
-package kotlin.nullable
-
 /**
  * 1. По умолчанию все объекты в Котлин - не нулабельные: не могут содержать
  * значение null.
@@ -11,6 +9,8 @@ package kotlin.nullable
  * 4. Чтобы использовать вместо null значение, по умолчанию используется
  * оператор Элвиса - varName?:defaultValue.
  */
+
+package kotlinCode.nullable
 
 fun main(args: Array<String>) {
 
@@ -27,6 +27,6 @@ fun main(args: Array<String>) {
     println(result)
 
     //барабанная дробь...
-    println(first!!.length);
+    println(first!!.length)
     //java.lang(!)NullPointerException
 }

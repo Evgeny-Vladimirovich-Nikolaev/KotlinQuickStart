@@ -1,8 +1,10 @@
-import kotlin.random.Random
-
 /**
  * 1. Цикл for записывается for(i in 1..10) - крайние значения входят в перебор
  */
+
+package kotlinCode.conditionsVsLoops
+
+import kotlin.random.Random
 
 fun main(args: Array<String>) {
     val rnd: Random = Random(0)

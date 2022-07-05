@@ -1,7 +1,7 @@
 package kotlinCode.functions
 
 fun main() {
-    var i = 5;
+    var i = 5
     val numbers = Array(7,  {i--})
     println(sort(numbers))
 
@@ -10,13 +10,9 @@ fun main() {
     println(sort())
 }
 
-fun sort(vararg numbers: Int): List<Int> {
-    return sort(numbers.toTypedArray())
-}
+fun sort(vararg numbers: Int) = sort(numbers.toTypedArray())
 
-fun sort(list: List<Int>): List<Int> {
-    return sort(list.toTypedArray())
-}
+fun sort(list: List<Int>) = sort(list.toTypedArray())
 
 fun sort(array: Array<Int>): List<Int> {
     for (i in array.size - 1 downTo 1) {

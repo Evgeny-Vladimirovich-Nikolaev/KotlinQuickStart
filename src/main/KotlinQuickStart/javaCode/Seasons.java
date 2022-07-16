@@ -1,4 +1,4 @@
-package java;
+package javaCode;
 
 public class Seasons {
 

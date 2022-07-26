@@ -20,6 +20,14 @@ fun main() {
 }
 
 fun printReport() {
-
+    println("Средняя выручка в неделю составляет ${calculateWeekAverageRevenue()} рублей")
+    println("Средняя выручка в месяц составляет ${calculateMonthAverageRevenue()} рублей")
 }
 
+fun calculateWeekAverageRevenue(): Double {
+    return data.filterNot { it.value.any { it < 0 } }.flatMap { it.value }.average()
+}
+
+fun calculateMonthAverageRevenue(): Double {
+    return data.filterNot { it.value.any { it < 0 } }.map { it.value.sum() }.average()
+}
